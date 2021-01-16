@@ -1,4 +1,4 @@
-# Ch17 Tuples
+# Ch17_tuplesIntroduction.py
 
 # Creating an empty tuple
 te = ()
@@ -26,4 +26,14 @@ print(t[1:3])    # Slice tuple, evaluates to ('chopin', 3)
 print(len(t))    # evaluates to 3
 # And just like strings, if we try to change a value inside a tuple, Python
 # does not allow that,
-t[1] = 4
+# t[1] = 4         # gives error, can't modify object
+
+# Calculate the quotient and remainder when we divide x by a y.
+def quotient_and_remainder(x, y):
+    q = x // y
+    r = x % y
+    return (q, r)
+
+(quot, rem) = quotient_and_remainder(4, 5) # evaluates to (0, 4)
+print(quot)                                # evaluates to 0
+print(rem)                                 # evaluates to 4
